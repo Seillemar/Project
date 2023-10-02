@@ -5,6 +5,7 @@ body {
     background-image: url('img/background.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container-1 {
@@ -64,6 +65,12 @@ body {
     border-radius: 100%;
     margin-left: -50px;
     margin-right: -50px;
+    z-index: 1;
+}
+
+.column-2 img {
+    border-radius: 100%;
+    border: 5px solid #333;
 }
 
 .column-3{
