@@ -1,0 +1,28 @@
+/* Styles pour la section de l'image au-dessus du texte */
+.image-above-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-above-text-section .image, .image-above-text-section .text {
+    max-width: 50%;
+}
+
+.image-above-text-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Média query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .image-above-text-section {
+        padding: 10px;
+    }
+
+    .image-above-text-section .image, .image-above-text-section .text {
+        max-width: 80%;
+    }
+}

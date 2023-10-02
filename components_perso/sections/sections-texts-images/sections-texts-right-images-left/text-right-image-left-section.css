@@ -1,0 +1,30 @@
+/* Styles pour la section de texte à droite et image à gauche */
+.text-right-image-left-section {
+    display: flex;
+    flex-direction: row; /* Disposition par défaut, texte à droite et image à gauche */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-right-image-left-section .text, .text-right-image-left-section .image {
+    max-width: 50%;
+}
+
+.text-right-image-left-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Média query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .text-right-image-left-section {
+        flex-direction: column-reverse; /* Inverse la disposition pour l'image à gauche */
+        padding: 10px;
+    }
+
+    .text-right-image-left-section .text, .text-right-image-left-section .image {
+        max-width: 80%;
+    }
+}
+
