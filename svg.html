@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animation GSAP</title>
+        <link rel="stylesheet" href="svg.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="svg.js"></script>
+    </head>
+    <body>
+
+        <div id="container">
+            <div id="texteGlissant">Elrice</div>
+            <div id="texteGlissant2">Prods</div>
+
+            <svg data-js-module="AnimatedLogo" class="js-module w-80 h-[7.125rem] md:w-[10.938rem] md:h-[15.625rem]" width="175" height="250" viewBox="0 0 175 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Utilise le nouveau chemin au lieu de l'original -->
+                <path id="logo-letter-path" d="M275,250 a1,1 0 0,0 400,0" fill="gray" />
+                <text id="mainText" fill="black" style="font-size: 100px; letter-spacing: 2.9px; font-family: MaisonMono-Medium, helvetica, sans-serif;">
+                    <textPath id="masterTextPath" xlink:href="#logo-letter-path" startOffset="0%">F SUITE F SUITE F SUITE F SUITE F SUITE F SUITE</textPath>
+                </text>
+            </svg>
+            
+            <svg id="gray-2" width="100%" height="500" style="position: absolute;">
+                <path d="M675,250 a1,1 0 0,0 -400,0" fill="gray" />
+            </svg>
+            
+            <svg id="black" width="100%" height="500" style="position: absolute;">
+                <circle cx="50%" cy="50%" r="150" fill="black" />
+            </svg>
+        </div>
+
+    </body>
+</html>

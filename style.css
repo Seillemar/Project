@@ -40,8 +40,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    width: 100%;
+    width: 98%;
+    background-color: #222;
     box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
 }
 
 .column-1, .column-2, .column-3 {
@@ -53,11 +55,11 @@ body {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #333;
+    background-color: #222;
     border-radius: 20px;
 }
 
-.column-1, .column-2 {
+.column-1 {
     margin-left: 4%;
 }
 
@@ -70,11 +72,18 @@ body {
 
 .column-2 img {
     border-radius: 100%;
-    border: 5px solid #333;
+    border: 5px solid #222;
 }
 
 .column-3{
     margin-right: 4%;
+}
+
+.column-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mid-title {
@@ -100,14 +109,18 @@ body {
 
 /* Styles pour le carrousel */
 .carousel-container {
-    width: 100%;
+    width: 98%;
     overflow: hidden;
     position: relative;
+    background-color: #222;
+    border-radius: 10px 10px 0 0;
+    margin-left: 10px;
 }
 
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    padding: 0px;
 }
 
 .carousel-item, .carousel-item-mid {
@@ -115,6 +128,11 @@ body {
     max-width: 33.33%;
     box-sizing: border-box;
     padding: 10px;
+}
+
+.carousel-item:hover, .carousel-item-mid:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
 }
 
 .carousel-item-mid{
@@ -132,7 +150,7 @@ img {
 }
 
 .carousel-controls button {
-    background-color: #333;
+    background-color: #555;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -149,12 +167,12 @@ img {
 }
 
 .carousel-controls button:hover, .voir-toute-realisations a:hover {
-    background-color: #555;
+    background-color: #ccc;
     color: #ff7f50;
 }
 
 .voir-toute-realisations{
-    background-color: #333;
+    background-color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,14 +190,14 @@ img {
 
 /* Styles spécifiques pour l'en-tête */
 header {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     /* Ajoutez d'autres styles */
 }
 
 /* Styles pour la navbar */
 .navbar {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
 }
 
@@ -253,7 +271,7 @@ header {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #333;
+        background-color: #222;
         width: 100%;
         z-index: 1;
         padding: 0; /* Supprimez la marge interne pour centrer correctement le sous-menu */
@@ -299,7 +317,7 @@ header {
 
 /* Styles pour le footer */
 footer {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     padding: 20px;
     text-align: center;
